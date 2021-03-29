@@ -15,13 +15,11 @@ int main(void){
     }
 
     for(int i=0;i<N+1;i++){
+        cout << x << "\t" << y << endl;
         for(int j=0;j<n+1;j++){
             y += a[j]*pow(x,j)*dx;
         }
-        cout << x << "\t" << y << endl;
         x += dx;
     }
-
     return 0;
-    
 }
